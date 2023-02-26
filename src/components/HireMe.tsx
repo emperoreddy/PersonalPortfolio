@@ -1,7 +1,7 @@
 import { TbPhone, TbMail, TbBrandLinkedin } from "react-icons/tb";
 import { useForm, ValidationError } from "@formspree/react";
 import AlertButton from "./AlertButton";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 export default function HireMe() {
   const [state, handleSubmit] = useForm("xjvdwqgg");
@@ -12,10 +12,22 @@ export default function HireMe() {
     setShowAlert(true);
   }
 
+  useEffect(() => {
+    if (showAlert) {
+      const timer = setTimeout(() => {
+        setShowAlert(false);
+      }, 4000);
+
+      return () => {
+        clearTimeout(timer);
+      };
+    }
+  }, [showAlert]);
+
   return (
     <>
       <div className="mx-auto flex h-auto w-[80%] flex-col items-center rounded-lg border-2 border-[#4200FF] bg-[#06004B] py-10">
-    <AlertButton/>
+        <AlertButton showAlert={showAlert} setShowAlert={setShowAlert} />
         <span className="mb-10 font-light text-[#CACACA]">
           Feel free to contact me any time , through any method below .
         </span>
@@ -74,6 +86,7 @@ export default function HireMe() {
 
             <button
               type="submit"
+              onClick={handleButtonClick}
               disabled={state.submitting}
               className="mt-4 rounded  bg-button py-3 px-4 font-semibold text-white transition  duration-200 ease-in-out hover:scale-105 hover:bg-indigo-700 "
             >

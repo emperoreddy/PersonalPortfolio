@@ -5,13 +5,10 @@ import Project from "./components/Project";
 import firstDesign from "./assets/firstDesign.png";
 import { motion } from "framer-motion";
 import Buttons2 from "./components/Button";
-import Hire from './components/HireMe'
+import Hire from "./components/HireMe";
 
 function App() {
-
-
   return (
-
     <div className="relative h-screen w-screen  overflow-x-hidden  bg-black bg-cover bg-center font-poppins text-white">
       <Nav first="Home" second="My work" third="Hire me" name="Bogdan A." />
 

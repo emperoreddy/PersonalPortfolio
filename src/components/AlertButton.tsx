@@ -1,11 +1,13 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
-export default function AlertButton() {
+export default function AlertButton({showAlert, setShowAlert}) {
 
-  const closed = `opacity`
+  const closed =  showAlert ? 'opacity-100' : 'opacity-0'
+ 
 
+ console.log(showAlert);
   return (
-    <div className="fixed top-0   m-4 flex w-96 rounded-lg z-20 shadow-lg transition-opacity duration-500 focus:outline-none">
+    <div className={`fixed top-0 ${closed}   m-4 flex w-96 rounded-lg z-20 shadow-lg transition-opacity duration-1000 focus:outline-none`}>
       <div className="flex items-center rounded-l-lg bg-indigo-600 py-4 px-6">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -21,7 +23,7 @@ export default function AlertButton() {
         </svg>
       </div>
       <div className="flex w-full items-center justify-between rounded-r-lg border border-gray-200 border-l-transparent bg-white px-4 py-6 text-lg font-medium text-black">
-        <div>Success alert</div>
+        <div>Thanks for contacting me!</div>
         <button>
           <svg
           onClick={() => {
