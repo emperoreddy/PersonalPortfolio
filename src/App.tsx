@@ -1,14 +1,17 @@
 import Nav from "./components/Navbar";
 import fumes from "./assets/fumes.png";
-import Button from "./components/oldButton";
 import Title from "./components/Title";
 import Project from "./components/Project";
 import firstDesign from "./assets/firstDesign.png";
 import { motion } from "framer-motion";
 import Buttons2 from "./components/Button";
+import Hire from './components/HireMe'
 
 function App() {
+
+
   return (
+
     <div className="relative h-screen w-screen  overflow-x-hidden  bg-black bg-cover bg-center font-poppins text-white">
       <Nav first="Home" second="My work" third="Hire me" name="Bogdan A." />
 
@@ -23,15 +26,34 @@ function App() {
           Transforming Ideas into Interactive Experiences
         </h2>
 
-        <Buttons2/>
+        <Buttons2 />
       </header>
 
-      <section className="container px-60  mx-auto mt-80">
+      <section className="mx-auto  mt-80 px-60">
         <Title title="My projects" />
         <div className="flex flex-col gap-20">
-          <Project mockup={firstDesign} right={true} color="purple" title="Landing Page" description="This was made with css html" />
-          <Project mockup={firstDesign} right={false}/>
+          <Project
+            mockup={firstDesign}
+            right={true}
+            color="purple"
+            title="Computer store Landing Page"
+            description="Technologies: HTML, CSS, JavaScript bla bla bla blasdasld sd asd sdas a"
+            link="https:\\google.com"
+          />
+          <Project
+            mockup={firstDesign}
+            right={false}
+            color="purple"
+            title="Computer store Landing Page"
+            description="Technologies: HTML, CSS, JavaScript"
+            link="https:\\google.com"
+          />
         </div>
+      </section>
+
+      <section className="mt-52 mb-20">
+        <Title title="Hire me" />
+        <Hire />
       </section>
     </div>
   );
