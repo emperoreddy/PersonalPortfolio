@@ -102,12 +102,20 @@ export default function HireMe() {
 
             <span className="flex items-center gap-5">
               <TbMail className="h-10 w-10" />
-              <p>a.bogdanandrei19@gmail.com</p>
+              <a href="mailto:a.bogdanandrei19@gmail.com">
+                a.bogdanandrei19@gmail.com
+              </a>
             </span>
 
             <span className="flex items-center gap-5">
               <TbBrandLinkedin className="h-10 w-10" />
-              <p>Linkedin</p>
+              <a
+                href="https://www.linkedin.com/in/bogdan-amortitu-7a14b61b3/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Amortitu Bogdan LinkedIn
+              </a>
             </span>
           </section>
         </section>
