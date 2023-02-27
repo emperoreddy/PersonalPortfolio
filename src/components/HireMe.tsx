@@ -1,7 +1,13 @@
-import { TbPhone, TbMail, TbBrandLinkedin } from "react-icons/tb";
+import {
+  TbPhone,
+  TbMail,
+  TbBrandLinkedin,
+  TbBrandGithub,
+} from "react-icons/tb";
 import { useForm, ValidationError } from "@formspree/react";
 import AlertButton from "./AlertButton";
 import { useState, useEffect } from "react";
+import light from '../assets/light.svg'
 
 export default function HireMe() {
   const [state, handleSubmit] = useForm("xjvdwqgg");
@@ -26,7 +32,7 @@ export default function HireMe() {
 
   return (
     <>
-      <div className="mx-auto flex h-auto w-[80%] flex-col items-center rounded-lg border-2 border-[#4200FF] bg-[#06004B] py-10">
+      <div className="relative mx-auto flex h-auto w-[80%] flex-col items-center  rounded-lg border-2 border-[#4200FF] bg-[#06004B] py-10">
         <AlertButton showAlert={showAlert} setShowAlert={setShowAlert} />
         <span className="mb-10 font-light text-[#CACACA]">
           Feel free to contact me any time , through any method below .
@@ -37,38 +43,38 @@ export default function HireMe() {
             className="mx-auto mt-10 flex w-72 flex-col gap-2  md:w-96 lg:mx-0"
             method="POST"
           >
-            <label htmlFor="nume" className="flex flex-col">
-              {"Nume"}
+            <label htmlFor="name" className="flex flex-col">
+              {"First Name"}
             </label>
             <input
               type="text"
               className="form-input  rounded-md bg-[#1A0084] py-1 px-3 transition duration-200 ease-in-out focus:ring-2 focus:ring-indigo-500"
-              id="nume"
-              name="nume"
+              id="name"
+              name="name"
               required
             />
 
             <ValidationError prefix="Name" field="name" errors={state.errors} />
 
-            <label htmlFor="prenume" className="flex flex-col">
-              {"Prenume"}
+            <label htmlFor="last_name" className="flex flex-col">
+              {"Last Name"}
             </label>
             <input
               type="text"
               className="form-input rounded-md bg-[#1A0084] py-1 px-3 transition duration-200 ease-in-out focus:ring-2 focus:ring-indigo-500"
-              id="prenume"
-              name="prenume"
+              id="last_name"
+              name="last_name"
               required
             />
 
             <ValidationError
-              prefix="Prenume"
-              field="prenume"
+              prefix="Last_name"
+              field="last_name"
               errors={state.errors}
             />
 
-            <label htmlFor="mesaj" className="flex flex-col">
-              {"Mesaj"}
+            <label htmlFor="message" className="flex flex-col">
+              {"Message"}
             </label>
             <textarea
               className="form-textarea rounded-md bg-[#1A0084] py-1 px-3 transition duration-200 ease-in-out focus:ring-2 focus:ring-indigo-500"
@@ -94,31 +100,42 @@ export default function HireMe() {
             </button>
           </form>
 
-          <section className="mt-16 flex flex-col gap-5">
-            <span className="flex items-center gap-5">
+          <section className="mt-16 flex flex-col gap-5 ">
+            <span className="flex items-center gap-5 ">
               <TbPhone className="h-10 w-10" />
               <p>+40771143274</p>
             </span>
 
-            <span className="flex items-center gap-5">
+            <span className="flex items-center gap-5 transition-all duration-150 hover:text-indigo-500">
               <TbMail className="h-10 w-10" />
               <a href="mailto:a.bogdanandrei19@gmail.com">
                 a.bogdanandrei19@gmail.com
               </a>
             </span>
 
-            <span className="flex items-center gap-5">
+            <span className="flex items-center gap-5 transition-all duration-150 hover:text-indigo-500">
               <TbBrandLinkedin className="h-10 w-10" />
               <a
                 href="https://www.linkedin.com/in/bogdan-amortitu-7a14b61b3/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Amortitu Bogdan LinkedIn
+                LinkedIn
+              </a>
+            </span>
+
+            <span className="flex items-center gap-5 transition-all duration-150 hover:text-indigo-500">
+              <TbBrandGithub className="h-10 w-10" />
+              <a
+                href="https://www.github.com/emperoreddy"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Github
               </a>
             </span>
           </section>
-        </section>
+        </section>{" "}
       </div>
     </>
   );

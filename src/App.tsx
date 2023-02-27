@@ -6,6 +6,7 @@ import firstDesign from "./assets/firstDesign.png";
 import { motion } from "framer-motion";
 import Buttons2 from "./components/Button";
 import Hire from "./components/HireMe";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -52,6 +53,11 @@ function App() {
         <Title title="Hire me" />
         <Hire />
       </section>
+
+
+      <footer>
+        <Footer/>
+      </footer>
     </div>
   );
 }
