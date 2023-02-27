@@ -10,13 +10,16 @@ import Footer from "./components/Footer";
 
 function App() {
   return (
-    <div className="relative h-screen w-screen  overflow-x-hidden  bg-black bg-cover bg-center font-poppins text-white">
+    <div className="relative h-screen w-screen  overflow-x-hidden  bg-black bg-cover bg-center font-poppins text-white scroll-smooth">
       <Nav first="Home" second="My work" third="Hire me" name="Bogdan A." />
 
       <div className="pointer-events-none absolute z-0 w-full overflow-x-hidden">
         <img src={fumes} alt="fumes " className="h-full w-full" />
       </div>
-      <header className="relative z-10 flex flex-col items-center gap-10">
+      <header
+        className="relative z-10 flex flex-col items-center gap-10"
+        id="header"
+      >
         <h1 className="mx-auto  mt-40 flex w-auto justify-center bg-gradient-to-r from-[#4200FF] to-[#d30fff] bg-clip-text font-amatic text-9xl font-bold text-transparent">
           Web Wizard
         </h1>
@@ -27,7 +30,7 @@ function App() {
         <Buttons2 />
       </header>
 
-      <section className="mx-auto  mt-80 px-60">
+      <section className="mx-auto  mt-80 px-60" id="projects">
         <Title title="My projects" />
         <div className="flex flex-col gap-20">
           <Project
@@ -49,14 +52,13 @@ function App() {
         </div>
       </section>
 
-      <section className="mt-52 mb-20">
+      <section className="mt-52 mb-20" id="contact">
         <Title title="Hire me" />
         <Hire />
       </section>
 
-
       <footer>
-        <Footer/>
+        <Footer />
       </footer>
     </div>
   );
