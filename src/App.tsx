@@ -7,6 +7,7 @@ import { motion } from "framer-motion";
 import Buttons2 from "./components/Button";
 import Hire from "./components/HireMe";
 import Footer from "./components/Footer";
+import infoData from "./project-info.json"
 
 function App() {
   return (

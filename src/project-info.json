@@ -1,0 +1,26 @@
+[
+  {
+    "mockup": "./assets/firstDesign.png",
+    "right": "true",
+    "color": "purple",
+    "title": "Computer store Landing Page",
+    "description": "Technologies: HTML, CSS, JavaScript",
+    "link": "https:\\google.com"
+  },
+  {
+    "mockup": "./assets/firstDesign.png",
+    "right": "true",
+    "color": "purple",
+    "title": "Computer store Landing Page",
+    "description": "Technologies: HTML, CSS, JavaScript",
+    "link": "https:\\google.com"
+  },
+  {
+    "mockup": "./assets/firstDesign.png",
+    "right": "true",
+    "color": "purple",
+    "title": "Computer store Landing Page",
+    "description": "Technologies: HTML, CSS, JavaScript",
+    "link": "https:\\google.com"
+  }
+]
