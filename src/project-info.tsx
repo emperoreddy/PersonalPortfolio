@@ -1,26 +1,32 @@
-[
+import firstDesign from './assets/firstDesign.png'
+
+
+const Info = [
   {
-    "mockup": "./assets/firstDesign.png",
-    "right": "true",
+    "mockup": firstDesign,
+    "right": true,
     "color": "purple",
     "title": "Computer store Landing Page",
     "description": "Technologies: HTML, CSS, JavaScript",
     "link": "https:\\google.com"
   },
   {
-    "mockup": "./assets/firstDesign.png",
-    "right": "true",
+    "mockup": firstDesign,
+    "right": false,
     "color": "purple",
     "title": "Computer store Landing Page",
     "description": "Technologies: HTML, CSS, JavaScript",
     "link": "https:\\google.com"
   },
   {
-    "mockup": "./assets/firstDesign.png",
-    "right": "true",
+    "mockup": firstDesign,
+    "right": true,
     "color": "purple",
     "title": "Computer store Landing Page",
     "description": "Technologies: HTML, CSS, JavaScript",
     "link": "https:\\google.com"
   }
+  
 ]
+
+export default Info;

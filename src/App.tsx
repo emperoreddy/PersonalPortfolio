@@ -7,11 +7,11 @@ import { motion } from "framer-motion";
 import Buttons2 from "./components/Button";
 import Hire from "./components/HireMe";
 import Footer from "./components/Footer";
-import infoData from "./project-info.json"
+import Info from "./project-info";
 
 function App() {
   return (
-    <div className="relative h-screen w-screen  overflow-x-hidden  bg-black bg-cover bg-center font-poppins text-white scroll-smooth">
+    <div className="relative h-screen w-screen  overflow-x-hidden  scroll-smooth bg-black bg-cover bg-center font-poppins text-white">
       <Nav first="Home" second="My work" third="Hire me" name="Bogdan A." />
 
       <div className="pointer-events-none absolute z-0 w-full overflow-x-hidden">
@@ -34,22 +34,19 @@ function App() {
       <section className="mx-auto  mt-80 px-60" id="projects">
         <Title title="My projects" />
         <div className="flex flex-col gap-20">
-          <Project
-            mockup={firstDesign}
-            right={true}
-            color="purple"
-            title="Computer store Landing Page"
-            description="Technologies: HTML, CSS, JavaScript bla bla bla blasdasld sd asd sdas a"
-            link="https:\\google.com"
-          />
-          <Project
-            mockup={firstDesign}
-            right={false}
-            color="purple"
-            title="Computer store Landing Page"
-            description="Technologies: HTML, CSS, JavaScript"
-            link="https:\\google.com"
-          />
+          {Info.map((info) => {
+            return (
+              <Project
+                key={info.title}
+                mockup={info.mockup}
+                color={info.color}
+                right={info.right}
+                title={info.title}
+                description={info.description}
+                link={info.link}
+              />
+            );
+          })}
         </div>
       </section>
 
