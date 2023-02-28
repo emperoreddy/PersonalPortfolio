@@ -6,7 +6,7 @@ export default function Buttons2() {
       <span></span>
       <span></span>
       <span></span>
-      <span></span> <p className="font-amatic font-bold text-2xl">About me</p> 
+      <span></span> <p className="font-amatic font-bold text-2xl">ABOUT ME</p> 
     </button>
   );
 }
