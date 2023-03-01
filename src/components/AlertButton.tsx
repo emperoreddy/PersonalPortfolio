@@ -5,9 +5,8 @@ export default function AlertButton({showAlert, setShowAlert}) {
   const closed =  showAlert ? 'opacity-100' : 'opacity-0'
  
 
- console.log(showAlert);
   return (
-    <div className={`fixed top-0 ${closed}   m-4 flex w-96 rounded-lg z-20 shadow-lg transition-opacity duration-1000 focus:outline-none`}>
+    <div className={`fixed top-14 ${closed}   m-4 flex w-96 rounded-lg z-20 shadow-lg transition-opacity duration-1000 focus:outline-none`}>
       <div className="flex items-center rounded-l-lg bg-indigo-600 py-4 px-6">
         <svg
           xmlns="http://www.w3.org/2000/svg"
