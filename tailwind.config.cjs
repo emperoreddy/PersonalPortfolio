@@ -8,8 +8,11 @@ module.exports = {
     },
     extend: {
       animation: {
-        'spin-slow': 'spin 3s linear infinite'
+        "spin-slow": "spin 3s linear infinite",
+        "gradient": "gradient 1s linear infinite",
       },
+
+      
 
       colors: {
         button: "#3800D6",

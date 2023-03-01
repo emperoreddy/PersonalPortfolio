@@ -7,7 +7,8 @@ import {
 import { useForm, ValidationError } from "@formspree/react";
 import AlertButton from "./AlertButton";
 import { useState, useEffect } from "react";
-import light from '../assets/light.svg'
+import light from "../assets/light.svg";
+import resume from "../assets/resume.pdf"
 
 export default function HireMe() {
   const [state, handleSubmit] = useForm("xjvdwqgg");
@@ -32,7 +33,7 @@ export default function HireMe() {
 
   return (
     <>
-      <div className="relative mx-auto flex h-auto w-[80%] flex-col items-center  rounded-lg border-2 border-[#4200FF] bg-[#06004B] py-10">
+      <div className="relative mx-auto flex h-auto w-[76%] flex-col items-center  rounded-lg border-2 border-[#4200FF] bg-[#06004B] py-10">
         <AlertButton showAlert={showAlert} setShowAlert={setShowAlert} />
         <span className="mb-10 font-light text-[#CACACA]">
           Feel free to contact me any time , through any method below .
@@ -44,7 +45,7 @@ export default function HireMe() {
             method="POST"
           >
             <label htmlFor="name" className="flex flex-col">
-              {"First Name"}
+              {"Name"}
             </label>
             <input
               type="text"
@@ -56,20 +57,20 @@ export default function HireMe() {
 
             <ValidationError prefix="Name" field="name" errors={state.errors} />
 
-            <label htmlFor="last_name" className="flex flex-col">
-              {"Last Name"}
+            <label htmlFor="email" className="flex flex-col">
+              {"Email"}
             </label>
             <input
-              type="text"
+              type="email"
               className="form-input rounded-md bg-[#1A0084] py-1 px-3 transition duration-200 ease-in-out focus:ring-2 focus:ring-indigo-500"
-              id="last_name"
-              name="last_name"
+              id="email"
+              name="email"
               required
             />
 
             <ValidationError
-              prefix="Last_name"
-              field="last_name"
+              prefix="Email"
+              field="email"
               errors={state.errors}
             />
 
@@ -134,8 +135,21 @@ export default function HireMe() {
                 Github
               </a>
             </span>
+
+            <div className="mx-auto mb-20 flex flex-col gap-4">
+              <button className="mt-8 h-20 w-72 rounded-md bg-gradient-to-tr from-blue-500 to-purple-600 py-2 px-4 font-bold text-white transition duration-200 ease-in-out hover:scale-105 hover:bg-gradient-to-bl active:scale-95 active:duration-100">
+                <a
+                  href={resume}
+                  download="Bogdan Amortitu Resume"
+                  draggable={false}
+                >
+                  <div className="text-xl">Personal Resume</div>
+                </a>
+              </button>
+            </div>
+
           </section>
-        </section>{" "}
+        </section>
       </div>
     </>
   );

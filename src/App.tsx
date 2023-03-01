@@ -21,7 +21,7 @@ function App() {
         className="relative z-10 flex flex-col items-center gap-10"
         id="header"
       >
-        <h1 className="mx-auto  mt-40 flex w-auto justify-center bg-gradient-to-r from-[#4200FF] to-[#d30fff] bg-clip-text font-amatic text-9xl font-bold text-transparent">
+        <h1  className="mx-auto mt-40 flex w-auto justify-center bg-gradient-to-r from-[#4200FF] via-pink-500  to-[#d30fff] bg-clip-text font-amatic text-9xl font-bold text-transparent">
           Web Wizard
         </h1>
         <h2 className="mb-10 font-amatic text-5xl ">
