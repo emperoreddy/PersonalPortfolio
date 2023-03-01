@@ -5,10 +5,9 @@ import Project from "./components/Project";
 import firstDesign from "./assets/firstDesign.png";
 import { motion } from "framer-motion";
 import Buttons2 from "./components/Button";
-import Hire from "./components/HireMe";
+import Hire from "./components/Contact";
 import Footer from "./components/Footer";
 import Info from "./project-info";
-import CursorTrail from './components/CursorTrail'
 import AnimatedCursor from "react-animated-cursor";
 
 function App() {

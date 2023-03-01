@@ -33,9 +33,9 @@ export default function HireMe() {
 
   return (
     <>
-      <div className="relative mx-auto flex h-auto w-[76%] flex-col items-center  rounded-lg border-2 border-[#4200FF] bg-[#06004B] py-10">
+      <div className="relative mx-auto flex  w-[76%] flex-col items-center  rounded-lg border-2 border-[#4200FF] bg-[#06004B] py-14">
         <AlertButton showAlert={showAlert} setShowAlert={setShowAlert} />
-        <span className="mb-10 font-light text-[#CACACA]">
+        <span className="mb-5 font-light text-[#CACACA]">
           Feel free to contact me any time , through any method below .
         </span>
         <section className="flex w-full justify-around px-32 ">
@@ -136,7 +136,7 @@ export default function HireMe() {
               </a>
             </span>
 
-            <div className="mx-auto mb-20 flex flex-col gap-4">
+            <div className="mx-auto  flex flex-col gap-4">
               <button className="mt-8 h-20 w-72 rounded-md bg-gradient-to-tr from-blue-500 to-purple-600 py-2 px-4 font-bold text-white transition duration-200 ease-in-out hover:scale-105 hover:bg-gradient-to-bl active:scale-95 active:duration-100">
                 <a
                   href={resume}
