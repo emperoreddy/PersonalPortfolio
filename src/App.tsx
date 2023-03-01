@@ -3,16 +3,16 @@ import fumes from "./assets/fumes.png";
 import Title from "./components/Title";
 import Project from "./components/Project";
 import firstDesign from "./assets/firstDesign.png";
-import { motion } from "framer-motion";
 import Buttons2 from "./components/Button";
 import Hire from "./components/Contact";
 import Footer from "./components/Footer";
+import About from "./components/About";
 import Info from "./project-info";
 import AnimatedCursor from "react-animated-cursor";
 
 function App() {
   return (
-    <div className="relative h-screen w-screen  overflow-x-hidden  scroll-smooth bg-black bg-cover bg-center font-poppins text-white">
+    <div className="relative h-screen w-screen selection:bg-indigo-500  overflow-x-hidden  scroll-smooth bg-black/95 bg-cover bg-center font-poppins text-white">
       <AnimatedCursor
         // color="	0, 196, 255"
         color="255,255,255"
@@ -22,7 +22,7 @@ function App() {
         outerScale={1.7}
         outerAlpha={0}
         outerStyle={{
-          border: "3px solid #9300ff",
+          border: "3px solid #6c00ff",
         }}
         clickables={[
           "a",
@@ -47,7 +47,7 @@ function App() {
         className="relative z-10 flex flex-col items-center gap-10"
         id="header"
       >
-        <h1 className="mx-auto mt-40 flex w-auto justify-center bg-gradient-to-r from-[#4200FF] via-pink-500  to-[#d30fff] bg-clip-text font-amatic text-9xl font-bold text-transparent">
+        <h1 className="mx-auto selection:text-black mt-40 flex w-auto justify-center bg-gradient-to-r from-[#4200FF] via-pink-500  to-[#d30fff] bg-clip-text font-amatic text-9xl font-bold text-transparent">
           Web Wizard
         </h1>
         <h2 className="mb-10 font-amatic text-5xl ">
@@ -57,7 +57,12 @@ function App() {
         <Buttons2 />
       </header>
 
-      <section className="mx-auto  mt-80 px-60" id="projects">
+      <section className="mt-80">
+        <Title title="whoami" />
+        <About />
+      </section>
+
+      <section className="mx-auto  mt-52 px-60" id="projects">
         <Title title="My projects" />
         <div className="flex flex-col gap-20">
           {Info.map((info) => {
