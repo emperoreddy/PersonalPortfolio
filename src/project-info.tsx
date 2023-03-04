@@ -25,6 +25,15 @@ const Info = [
     "title": "Computer store Landing Page",
     "description": "Technologies: HTML, CSS, JavaScript",
     "link": "https:\\google.com"
+  },
+
+  {
+    "mockup": firstDesign,
+    "right": false,
+    "color": "blue",
+    "title": "Serbanigga",
+    "description": "Technologies: Mongo, Node",
+    "link": "https:\\google.com"
   }
   
 ]
