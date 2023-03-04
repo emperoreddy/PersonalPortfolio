@@ -1,13 +1,13 @@
 import profile from "../assets/profile.png";
 import circle from "../assets/circle.svg";
-
+import Typewriter from "typewriter-effect";
 
 export default function About() {
   return (
     <>
       <div className=" flex flex-col justify-center gap-20 px-28">
         <div className=" relative  flex justify-center gap-40  text-justify text-xl font-light">
-          <div className="w-1/2 gap-40 flex flex-col">
+          <div className="flex w-1/2 flex-col gap-40">
             <p className=" leading-relaxed ">
               I'm a junior{" "}
               <span className="font-medium text-[#7746ff] selection:text-black">
@@ -28,8 +28,17 @@ export default function About() {
             </p>
 
             <div className="flex justify-start ">
-              <div className="flex h-10 w-[35rem] justify-center bg-[#3800D6] rounded-lg">
-                helo
+              <div className="flex h-12 w-[33rem] items-center justify-center rounded-lg bg-[#3800D6] font-medium">
+                <Typewriter
+                  options={{
+                    strings: [
+                      "$grep -i “technologies” knowledge.txt",
+                      "SELECT technologies FROM knowledge",
+                    ],
+                    autoStart: true,
+                    loop: true,
+                  }}
+                />
               </div>
             </div>
           </div>

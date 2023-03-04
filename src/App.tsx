@@ -58,7 +58,7 @@ function App() {
       </header>
 
       <section className="mt-80">
-        <Title title="whoami" />
+        <Title title="$whoami" />
         <About />
       </section>
 
