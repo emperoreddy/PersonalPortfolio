@@ -31,7 +31,7 @@ const Info = [
     "mockup": firstDesign,
     "right": false,
     "color": "blue",
-    "title": "Serbanigga",
+    "title": "Test",
     "description": "Technologies: Mongo, Node",
     "link": "https:\\google.com"
   }

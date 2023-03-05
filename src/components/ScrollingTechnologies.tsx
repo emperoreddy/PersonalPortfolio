@@ -12,27 +12,27 @@ export default function ScrollingTechnologies() {
   return (
     <>
       <div className="mx-auto flex h-auto w-full items-center justify-center gap-56 ">
-        <img src={java} className="h-40 w-40 animate-slide" />
-        <img src={cpp} className="h-40 w-40 animate-slide" />
-        <img src={react} className="h-40 w-40 animate-slide" />
+        <img src={java} className="h-32 w-32 animate-slide" />
+        <img src={cpp} className="h-32 w-32 animate-slide" />
+        <img src={react} className="h-32 w-32 animate-slide" />
         <img src={javascript} className="h-32 w-32 animate-slide" />
-        <img src={python} className="h-40 w-40 animate-slide" />
-        <img src={tailwind} className="h-40 w-40 animate-slide" />
-        <img src={node} className="h-40 w-40 animate-slide" />
-        <img src={java} className="h-40 w-40 animate-slide" />
-        <img src={cpp} className="h-40 w-40 animate-slide" />
-        <img src={react} className="h-40 w-40 animate-slide" />
+        <img src={python} className="h-32 w-32 animate-slide" />
+        <img src={tailwind} className="h-32 w-32 animate-slide" />
+        <img src={node} className="h-32 w-32 animate-slide" />
+        <img src={java} className="h-32 w-32 animate-slide" />
+        <img src={cpp} className="h-32 w-32 animate-slide" />
+        <img src={react} className="h-32 w-32 animate-slide" />
         <img src={javascript} className="h-32 w-32 animate-slide" />
-        <img src={python} className="h-40 w-40 animate-slide" />
-        <img src={tailwind} className="h-40 w-40 animate-slide" />
-        <img src={node} className="h-40 w-40 animate-slide" />
-        <img src={java} className="h-40 w-40 animate-slide" />
-        <img src={cpp} className="h-40 w-40 animate-slide" />
-        <img src={react} className="h-40 w-40 animate-slide" />
+        <img src={python} className="h-32 w-32 animate-slide" />
+        <img src={tailwind} className="h-32 w-32 animate-slide" />
+        <img src={node} className="h-32 w-32 animate-slide" />
+        <img src={java} className="h-32 w-32 animate-slide" />
+        <img src={cpp} className="h-32 w-32 animate-slide" />
+        <img src={react} className="h-32 w-32 animate-slide" />
         <img src={javascript} className="h-32 w-32 animate-slide" />
-        <img src={python} className="h-40 w-40 animate-slide" />
-        <img src={tailwind} className="h-40 w-40 animate-slide" />
-        <img src={node} className="h-40 w-40 animate-slide" />
+        <img src={python} className="h-32 w-32 animate-slide" />
+        <img src={tailwind} className="h-32 w-32 animate-slide" />
+        <img src={node} className="h-32 w-32 animate-slide" />
       </div>
     </>
   );

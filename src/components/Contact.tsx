@@ -8,7 +8,7 @@ import { useForm, ValidationError } from "@formspree/react";
 import AlertButton from "./AlertButton";
 import { useState, useEffect } from "react";
 import light from "../assets/light.svg";
-import resume from "../assets/resume.pdf"
+import resume from "../assets/resume.pdf";
 
 export default function HireMe() {
   const [state, handleSubmit] = useForm("xjvdwqgg");
@@ -38,10 +38,10 @@ export default function HireMe() {
         <span className="mb-5 font-light text-[#CACACA]">
           Feel free to contact me any time , through any method below .
         </span>
-        <section className="flex w-full justify-around px-32 ">
+        <section className="w-full flex-col  justify-around px-32 lg:flex  lg:gap-10 xl:gap-0">
           <form
             onSubmit={handleSubmit}
-            className="mx-auto mt-10 flex w-72 flex-col gap-2  md:w-96 lg:mx-0"
+            className="mx-auto mt-10 flex w-80 lg:w-72 flex-col gap-2  lg:w-96 xl:mx-0"
             method="POST"
           >
             <label htmlFor="name" className="flex flex-col">
@@ -101,7 +101,7 @@ export default function HireMe() {
             </button>
           </form>
 
-          <section className="mt-16 flex flex-col gap-5 ">
+          <section className=" mt-16 flex flex-col gap-5 ">
             <span className="flex items-center gap-5 ">
               <TbPhone className="h-10 w-10" />
               <p>+40771143274</p>
@@ -137,7 +137,7 @@ export default function HireMe() {
             </span>
 
             <div className="mx-auto  flex flex-col gap-4">
-              <button className="mt-8 h-20 w-72 rounded-md bg-gradient-to-tr from-blue-500 to-purple-600 py-2 px-4 font-bold text-white transition duration-200 ease-in-out hover:scale-105 hover:bg-gradient-to-bl active:scale-95 active:duration-100">
+              <button className="mt-8 h-20 w-80 rounded-md bg-gradient-to-tr from-blue-500 to-purple-600 py-2 px-4 font-bold text-white transition duration-200 ease-in-out hover:scale-105 hover:bg-gradient-to-bl active:scale-95 active:duration-100 lg:w-72">
                 <a
                   href={resume}
                   download="Bogdan Amortitu Resume"
@@ -147,7 +147,6 @@ export default function HireMe() {
                 </a>
               </button>
             </div>
-
           </section>
         </section>
       </div>

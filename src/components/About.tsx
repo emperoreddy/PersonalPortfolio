@@ -9,7 +9,7 @@ export default function About() {
     <>
       <div className=" flex flex-col justify-center gap-20 px-28">
         <div className=" relative  flex justify-center gap-40  text-justify text-xl font-light mb-20">
-          <div className="flex w-1/2 flex-col gap-40">
+          <div className="flex md:w-[33rem] lg:w-1/2 flex-col gap-40">
             <p className=" leading-relaxed ">
               I'm a junior{" "}
               <span className="font-medium text-[#7746ff] selection:text-black">
@@ -29,8 +29,8 @@ export default function About() {
               considering me for your project.
             </p>
 
-            <div className="flex justify-start ">
-              <div className="flex h-12 w-[33rem] items-center justify-center rounded-lg border-4 border-x-0 border-t-0 border-gray-400 bg-[#3800D6] font-medium shadow-xl shadow-indigo-500">
+            <div className="flex justify-center lg:justify-start ">
+              <div className="md:absolute  flex h-14 lg:text-xl  w-[33rem] items-center justify-center rounded-lg border-4 border-x-0 border-t-0 border-gray-400 bg-[#3800D6] font-medium shadow-xl shadow-indigo-500">
                 <Typewriter
                   options={{
                     strings: [
@@ -45,7 +45,7 @@ export default function About() {
             </div>
           </div>
 
-          <div className="group relative h-64">
+          <div className="group relative hidden lg:block h-64">
             <div className="w-65 absolute inset-0 z-30 h-64 rounded-full bg-indigo-600/40 transition-all duration-150 ease-in-out group-hover:bg-transparent"></div>
             <img
               src={profile}
