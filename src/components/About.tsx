@@ -1,12 +1,14 @@
 import profile from "../assets/profile.png";
 import circle from "../assets/circle.svg";
 import Typewriter from "typewriter-effect";
+import Technologies from "./ScrollingTechnologies";
+import ScrollingTechnologies from "./ScrollingTechnologies";
 
 export default function About() {
   return (
     <>
       <div className=" flex flex-col justify-center gap-20 px-28">
-        <div className=" relative  flex justify-center gap-40  text-justify text-xl font-light">
+        <div className=" relative  flex justify-center gap-40  text-justify text-xl font-light mb-20">
           <div className="flex w-1/2 flex-col gap-40">
             <p className=" leading-relaxed ">
               I'm a junior{" "}
@@ -28,7 +30,7 @@ export default function About() {
             </p>
 
             <div className="flex justify-start ">
-              <div className="flex h-12 w-[33rem] items-center justify-center rounded-lg bg-[#3800D6] font-medium">
+              <div className="flex h-12 w-[33rem] items-center justify-center rounded-lg border-4 border-x-0 border-t-0 border-gray-400 bg-[#3800D6] font-medium shadow-xl shadow-indigo-500">
                 <Typewriter
                   options={{
                     strings: [
@@ -57,6 +59,8 @@ export default function About() {
             />
           </div>
         </div>
+
+        <ScrollingTechnologies />
       </div>
     </>
   );
