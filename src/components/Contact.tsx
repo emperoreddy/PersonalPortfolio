@@ -38,10 +38,10 @@ export default function HireMe() {
         <span className="mb-5 font-light text-[#CACACA]">
           Feel free to contact me any time , through any method below .
         </span>
-        <section className="w-full flex-col  justify-around px-32 lg:flex  lg:gap-10 xl:gap-0">
+        <section className="w-full justify-around px-20 lg:px-10 xl:px-32 max-md:flex-col lg:flex  lg:gap-10 xl:gap-0">
           <form
             onSubmit={handleSubmit}
-            className="mx-auto mt-10 flex w-80 lg:w-72 flex-col gap-2  lg:w-96 xl:mx-0"
+            className="mx-auto mt-10 flex  flex-col gap-2  lg:w-96 xl:mx-0"
             method="POST"
           >
             <label htmlFor="name" className="flex flex-col">
@@ -136,8 +136,8 @@ export default function HireMe() {
               </a>
             </span>
 
-            <div className="mx-auto  flex flex-col gap-4">
-              <button className="mt-8 h-20 w-80 rounded-md bg-gradient-to-tr from-blue-500 to-purple-600 py-2 px-4 font-bold text-white transition duration-200 ease-in-out hover:scale-105 hover:bg-gradient-to-bl active:scale-95 active:duration-100 lg:w-72">
+            <div className="mx-auto  flex flex-col w-full gap-4">
+              <button className="mt-8 h-20 w-full md:h-20 rounded-md bg-gradient-to-tr from-blue-500 to-purple-600 py-2 px-4 font-bold text-white transition duration-200 ease-in-out hover:scale-105 hover:bg-gradient-to-bl active:scale-95 active:duration-100 lg:w-72">
                 <a
                   href={resume}
                   download="Bogdan Amortitu Resume"
