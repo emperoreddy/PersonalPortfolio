@@ -31,7 +31,7 @@ export default function Project(props) {
           <div className="flex flex-col items-start  gap-4 px-5 py-3 ">
             <p className="font-semibold">{props.title}</p>
             <p className="text-sm font-light">{props.description}</p>
-            <a href={props.link}>
+            <a href={props.link} target="_blank">
               <button className="cssbuttons-io-button bg-gradient-to-br from-[#00c8ff] to-[#00C6FF]/80 text-xs font-medium text-black">
                 See Website
                 <div className="icon">
