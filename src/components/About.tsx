@@ -9,7 +9,7 @@ export default function About() {
     <>
       <div className=" flex flex-col justify-center gap-14 md:gap-20 px-28">
         <div className=" relative  flex justify-center gap-40  text-justify text-lg md:text-xl font-light mb-20">
-          <div className="flex w-[18rem] md:w-[33rem] lg:w-1/2 flex-col gap-32 md:gap-40">
+          <div className="flex w-[18rem] sm:w-[30rem] md:w-[33rem] lg:w-1/2 flex-col gap-32 md:gap-40">
             <p className=" leading-relaxed ">
               I'm a junior{" "}
               <span className="font-medium text-[#7746ff] selection:text-black">
@@ -30,7 +30,7 @@ export default function About() {
             </p>
 
             <div className="flex justify-center lg:justify-start ">
-              <div className="md:absolute text-sm md:text-xl  flex h-12 md:h-14  w-[33rem] items-center justify-center rounded-lg border-4 border-x-0 border-t-0 border-gray-400 bg-[#3800D6] font-medium shadow-xl shadow-indigo-500">
+              <div className="md:absolute text-sm md:text-xl sm:text-lg  flex h-12 md:h-14  w-[33rem] items-center justify-center rounded-lg border-4 border-x-0 border-t-0 border-gray-400 bg-[#3800D6] font-medium shadow-xl shadow-indigo-500">
                 <Typewriter
                   options={{
                     strings: [

@@ -41,7 +41,7 @@ export default function HireMe() {
         <section className="w-full justify-around px-7 max-md:flex-col md:px-20 lg:flex lg:gap-10 lg:px-10  xl:gap-0 xl:px-32">
           <form
             onSubmit={handleSubmit}
-            className="mx-auto mt-10 flex flex-col  gap-2 md:max-w-lg  lg:w-96 xl:mx-0"
+            className="mx-auto mt-10 flex flex-col  gap-2 sm:max-w-lg  lg:w-96 xl:mx-0"
             method="POST"
           >
             <label htmlFor="name" className="flex flex-col">
