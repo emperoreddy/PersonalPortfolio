@@ -12,9 +12,9 @@ import AnimatedCursor from "react-animated-cursor";
 
 function App() {
   return (
-    <div className="relative h-screen w-screen selection:bg-indigo-500  overflow-x-hidden  scroll-smooth bg-black/95 bg-cover bg-center font-poppins text-white">
+    <div className="relative h-screen  w-screen selection:bg-indigo-500  overflow-x-hidden  scroll-smooth bg-black/95 bg-cover bg-center font-poppins text-white">
+      <div className="max-md:hidden">
       <AnimatedCursor
-        // color="	0, 196, 255"
         color="255,255,255"
         innerSize={8}
         outerSize={35}
@@ -38,26 +38,29 @@ function App() {
           ".link",
         ]}
       />
+      </div>
       <Nav first="Home" second="My work" third="Hire me" name="Bogdan A." />
 
       <div className="pointer-events-none absolute z-0 w-full overflow-x-hidden">
         <img src={fumes} alt="fumes " className="h-full w-full" />
       </div>
+
+
       <header
-        className="relative z-10 flex flex-col items-center gap-10"
+        className="relative -mt-12 md:mt-auto z-10 flex flex-col items-center gap-10"
         id="header"
       >
-        <h1 className="mx-auto selection:text-black mt-40 flex w-auto justify-center bg-gradient-to-r from-[#4200FF] via-pink-500  to-[#d30fff] bg-clip-text font-amatic text-9xl font-bold text-transparent">
+        <h1 className="mx-auto selection:text-black mt-40 flex w-auto justify-center bg-gradient-to-r from-[#4200FF] via-pink-500  to-[#d30fff] bg-clip-text font-amatic text-8xl md:text-9xl font-bold text-transparent">
           Web Wizard
         </h1>
-        <h2 className="mb-10 font-amatic text-5xl ">
+        <h2 className="mb-5 md:mb-10 font-amatic text-2xl md:text-5xl ">
           Transforming Ideas into Interactive Experiences
         </h2>
 
         <Buttons2 />
       </header>
 
-      <section className="mt-80">
+      <section className="mt-80" id="about">
         <Title title="$whoami" />
         <About />
       </section>

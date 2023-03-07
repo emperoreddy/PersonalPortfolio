@@ -41,7 +41,7 @@ export default function Navbar(props) {
           </p>
         </div>
         <button
-          className={`hamburger hamburger--squeeze scale-50 self-center md:hidden ${
+          className={`hamburger hamburger--squeeze  scale-50 self-center md:hidden ${
             isActive ? "is-active" : ""
           }`}
           onClick={(e) => {
@@ -111,7 +111,7 @@ export default function Navbar(props) {
                   className="block py-2 focus:text-[#6865FF]  md:p-4"
                   href="#contact"
                 >
-                  Galerie
+                 Contact 
                 </a>
               </motion.li>
             </motion.ul>
