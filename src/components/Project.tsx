@@ -8,10 +8,20 @@ export default function Project(props) {
       : "from-indigo-500/70 to-pink-500/70"
   } ${props.right === true ? "justify-end" : "justify-start"}`;
 
+  const animate = `${
+    props.right ? 200 : -200
+  }`
+
   return (
     <div className={`flex ${className}`}>
       <div className="absolute h-96 w-96  animate-spin-slow rounded-full bg-gradient-to-tr blur-3xl"></div>
-      <div className="box z-10 lg:mx-8 mt-10 flex   h-80  w-80 flex-col gap-3 overflow-hidden rounded-xl bg-[#0F006C] p-4 ">
+      <motion.div
+        initial={{ opacity: 0, x: `${animate}` }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ duration: 2, delay: 0.5 , type:"spring", bounce:0.5}}
+        viewport={{ once: true }}
+        className="box z-10 mt-10 flex h-80   w-80  flex-col gap-3 overflow-hidden rounded-xl bg-[#0F006C] p-4 lg:mx-8 "
+      >
         <div
           className="h-1/2 rounded-t-sm bg-cover bg-center "
           style={{ backgroundImage: `url(${props.mockup})` }}
@@ -42,7 +52,7 @@ export default function Project(props) {
             </a>
           </div>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 }

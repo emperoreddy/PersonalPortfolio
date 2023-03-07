@@ -29,7 +29,12 @@ export default function Navbar(props) {
 
   return (
     <>
-      <div className="sticky top-0 z-50 flex h-14 justify-between  bg-[#200047]/80 py-2 pl-5 backdrop-blur-md md:justify-around md:gap-72  md:px-0 lg:gap-96 ">
+      <motion.div
+        initial={{ opacity: 0, y: -200 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1 }}
+        className="sticky top-0 z-50 flex h-14 justify-between  bg-[#200047]/80 py-2 pl-5 backdrop-blur-md md:justify-around md:gap-72  md:px-0 lg:gap-96 "
+      >
         <div className="flex items-center gap-3">
           <img
             src={profile}
@@ -71,7 +76,7 @@ export default function Navbar(props) {
             </button>
           </a>
         </ul>
-      </div>
+      </motion.div>
 
       {/* DROPDOWN NAV */}
 
@@ -84,10 +89,11 @@ export default function Navbar(props) {
             transition={{ duration: 0.2 }}
             exit={{ height: 0, opacity: 0 }}
           >
-            <motion.ul className="pt-2 pb-4 text-base md:flex md:justify-between md:pt-0"
-            initial="hidden" 
-            animate="visible"
-            variants={list}
+            <motion.ul
+              className="pt-2 pb-4 text-base md:flex md:justify-between md:pt-0"
+              initial="hidden"
+              animate="visible"
+              variants={list}
             >
               <motion.li variants={item}>
                 <a
@@ -111,7 +117,7 @@ export default function Navbar(props) {
                   className="block py-2 focus:text-[#6865FF]  md:p-4"
                   href="#contact"
                 >
-                 Contact 
+                  Contact
                 </a>
               </motion.li>
             </motion.ul>
