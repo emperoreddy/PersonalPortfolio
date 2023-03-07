@@ -10,8 +10,8 @@ export default function Project(props) {
 
   return (
     <div className={`flex ${className}`}>
-      <div className="absolute h-96 w-96    animate-spin-slow rounded-full bg-gradient-to-tr blur-3xl"></div>
-      <div className="box z-10 lg:mx-8 mt-10 flex h-80 w-80 flex-col gap-3 overflow-hidden rounded-xl bg-[#0F006C] p-4 ">
+      <div className="absolute h-96 w-96  animate-spin-slow rounded-full bg-gradient-to-tr blur-3xl"></div>
+      <div className="box z-10 lg:mx-8 mt-10 flex   h-80  w-80 flex-col gap-3 overflow-hidden rounded-xl bg-[#0F006C] p-4 ">
         <div
           className="h-1/2 rounded-t-sm bg-cover bg-center "
           style={{ backgroundImage: `url(${props.mockup})` }}

@@ -19,6 +19,20 @@ export default function ScrollingTechnologies() {
         <img src={python} className="w-20 h-20 md:h-32 md:w-32 animate-slide" />
         <img src={tailwind} className="w-20 h-20 md:h-32 md:w-32 animate-slide" />
         <img src={node} className="w-20 h-20 md:h-32 md:w-32 animate-slide" />
+        <img src={java} className="w-20 h-20 md:h-32 md:w-32 animate-slide" />
+        <img src={cpp} className="w-20 h-20 md:h-32 md:w-32 animate-slide" />
+        <img src={react} className="w-20 h-20 md:h-32 md:w-32 animate-slide" />
+        <img src={javascript} className="w-20 h-20 md:h-32 md:w-32 animate-slide" />
+        <img src={python} className="w-20 h-20 md:h-32 md:w-32 animate-slide" />
+        <img src={tailwind} className="w-20 h-20 md:h-32 md:w-32 animate-slide" />
+        <img src={node} className="w-20 h-20 md:h-32 md:w-32 animate-slide" />
+        <img src={java} className="w-20 h-20 md:h-32 md:w-32 animate-slide" />
+        <img src={cpp} className="w-20 h-20 md:h-32 md:w-32 animate-slide" />
+        <img src={react} className="w-20 h-20 md:h-32 md:w-32 animate-slide" />
+        <img src={javascript} className="w-20 h-20 md:h-32 md:w-32 animate-slide" />
+        <img src={python} className="w-20 h-20 md:h-32 md:w-32 animate-slide" />
+        <img src={tailwind} className="w-20 h-20 md:h-32 md:w-32 animate-slide" />
+        <img src={node} className="w-20 h-20 md:h-32 md:w-32 animate-slide" />
         
       </div>
     </>

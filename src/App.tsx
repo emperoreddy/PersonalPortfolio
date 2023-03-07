@@ -65,7 +65,7 @@ function App() {
         <About />
       </section>
 
-      <section className="mx-auto  mt-52 px-60" id="projects">
+      <section className="mx-auto  mt-52 px-9 md:px-60" id="projects">
         <Title title="My projects" />
         <div className="flex flex-col gap-20">
           {Info.map((info) => {
@@ -84,7 +84,7 @@ function App() {
         </div>
       </section>
 
-      <section className="mt-52 mb-20" id="contact">
+      <section className="mt-52 mb-14 md:mb-20" id="contact">
         <Title title="Hire me" />
         <Hire />
       </section>

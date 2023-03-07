@@ -33,15 +33,15 @@ export default function HireMe() {
 
   return (
     <>
-      <div className="relative mx-auto flex  w-[76%] flex-col items-center  rounded-lg border-2 border-[#4200FF] bg-[#06004B] py-14">
+      <div className="relative mx-auto flex w-[95%]  flex-col items-center rounded-lg  border-2 border-[#4200FF] bg-[#06004B] py-14 md:w-[76%]">
         <AlertButton showAlert={showAlert} setShowAlert={setShowAlert} />
-        <span className="mb-5 font-light text-[#CACACA]">
+        <span className="md:text- mb-5 text-center text-sm font-light text-[#CACACA] md:text-base">
           Feel free to contact me any time , through any method below .
         </span>
-        <section className="w-full justify-around px-20 lg:px-10 xl:px-32 max-md:flex-col lg:flex  lg:gap-10 xl:gap-0">
+        <section className="w-full justify-around px-7 max-md:flex-col md:px-20 lg:flex lg:gap-10 lg:px-10  xl:gap-0 xl:px-32">
           <form
             onSubmit={handleSubmit}
-            className="mx-auto mt-10 flex  flex-col gap-2  lg:w-96 xl:mx-0"
+            className="mx-auto mt-10 flex flex-col  gap-2 md:max-w-lg  lg:w-96 xl:mx-0"
             method="POST"
           >
             <label htmlFor="name" className="flex flex-col">
@@ -78,7 +78,7 @@ export default function HireMe() {
               {"Message"}
             </label>
             <textarea
-              className="form-textarea rounded-md bg-[#1A0084] py-1 px-3 transition duration-200 ease-in-out focus:ring-2 focus:ring-indigo-500"
+              className="form-textarea rounded-md resize-none bg-[#1A0084] py-1 px-3 transition duration-200 ease-in-out focus:ring-2 focus:ring-indigo-500"
               id="message"
               name="message"
               rows={5}
@@ -101,21 +101,21 @@ export default function HireMe() {
             </button>
           </form>
 
-          <section className=" mt-16 flex flex-col gap-5 ">
+          <section className=" mx-auto mt-16 flex max-w-lg flex-col gap-5 lg:mx-0 ">
             <span className="flex items-center gap-5 ">
-              <TbPhone className="h-10 w-10" />
+              <TbPhone className="h-8 w-8 md:h-10 md:w-10" />
               <p>+40771143274</p>
             </span>
 
-            <span className="flex items-center gap-5 transition-all duration-150 hover:text-indigo-500">
-              <TbMail className="h-10 w-10" />
+            <span className="flex items-center gap-5 text-sm transition-all duration-150 hover:text-indigo-500 md:text-base">
+              <TbMail className="h-8   w-8 md:h-10 md:w-10" />
               <a href="mailto:a.bogdanandrei19@gmail.com">
                 a.bogdanandrei19@gmail.com
               </a>
             </span>
 
             <span className="flex items-center gap-5 transition-all duration-150 hover:text-indigo-500">
-              <TbBrandLinkedin className="h-10 w-10" />
+              <TbBrandLinkedin className="h-8  w-8 md:h-10 md:w-10" />
               <a
                 href="https://www.linkedin.com/in/bogdan-amortitu-7a14b61b3/"
                 target="_blank"
@@ -126,7 +126,7 @@ export default function HireMe() {
             </span>
 
             <span className="flex items-center gap-5 transition-all duration-150 hover:text-indigo-500">
-              <TbBrandGithub className="h-10 w-10" />
+              <TbBrandGithub className="h-8  w-8 md:h-10 md:w-10" />
               <a
                 href="https://www.github.com/emperoreddy"
                 target="_blank"
@@ -136,8 +136,8 @@ export default function HireMe() {
               </a>
             </span>
 
-            <div className="mx-auto  flex flex-col w-full gap-4">
-              <button className="mt-8 h-20 w-full md:h-20 rounded-md bg-gradient-to-tr from-blue-500 to-purple-600 py-2 px-4 font-bold text-white transition duration-200 ease-in-out hover:scale-105 hover:bg-gradient-to-bl active:scale-95 active:duration-100 lg:w-72">
+            <div className="mx-auto  flex w-full flex-col gap-4">
+              <button className="mt-8 h-16 w-full rounded-md bg-gradient-to-tr from-blue-500 to-purple-600 py-2 px-4 font-bold text-white transition duration-200 ease-in-out hover:scale-105 hover:bg-gradient-to-bl active:scale-95 active:duration-100 md:h-20 lg:w-72">
                 <a
                   href={resume}
                   download="Bogdan Amortitu Resume"
