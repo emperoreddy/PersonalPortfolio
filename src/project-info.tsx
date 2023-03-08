@@ -25,7 +25,7 @@ const Info = [
     color: "purple",
     title: "Personal Portfolio",
     description: "Technologies: React, TailwindCSS, NodeJs",
-    link: "https://github.com/emperoreddy/GoGreen",
+    link: "https://amortitubogdan.com",
   },
 ];
 
