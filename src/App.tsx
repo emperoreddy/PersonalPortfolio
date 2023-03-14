@@ -49,7 +49,7 @@ function App() {
       <Nav first="Home" second="My work" third="Hire me" name="Bogdan A." />
 
       <div className="pointer-events-none absolute z-0 w-full overflow-x-hidden">
-        <img src={fumes} alt="fumes " className="h-full w-full" />
+        <img src={fumes} alt="fumes bg" className="h-full w-full" />
       </div>
 
       {/* WRAPPER */}
