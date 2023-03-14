@@ -24,3 +24,15 @@
     transform: translate3d(-2692px, 0, 0);
   }
 }
+
+
+.app {
+  
+background-image:
+radial-gradient(white, rgba(255,255,255,.05) 2px, transparent 20px),
+radial-gradient(white, rgba(255,255,255,.07) 2px, transparent 20px),
+/* radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 20px), */
+radial-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0) 2px, transparent 10px);
+background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px; 
+background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
+}

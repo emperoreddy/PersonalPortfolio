@@ -9,7 +9,7 @@ const Info = [
     color: "purple",
     title: "Computer store Landing Page",
     description: "Technologies: HTML, TailwindCss, JavaScript",
-    link: "https://emperoreddy.github.io/Comp-Landing-Page/",
+    link: "https://comp-landing.netlify.app/",
   },
   {
     mockup: gogreen,

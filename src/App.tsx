@@ -18,7 +18,7 @@ function App() {
   };
 
   return (
-    <div className="relative h-screen  w-screen overflow-x-hidden  scroll-smooth  bg-black/95 bg-cover bg-center font-poppins text-white selection:bg-indigo-500">
+    <div className="app relative h-screen  w-screen overflow-x-hidden  scroll-smooth  bg-black/95 bg-cover bg-center font-poppins text-white selection:bg-indigo-500">
       <div className="max-md:hidden">
         <AnimatedCursor
           color="255,255,255"

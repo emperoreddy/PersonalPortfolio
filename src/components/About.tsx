@@ -30,7 +30,7 @@ export default function About() {
               </span>{" "}
               with a focus on{" "}
               <span className="font-medium text-[#7746ff] selection:text-black">
-                HTML, CSS, JavaScript,
+                HTML / CSS, React, NodeJs
               </span>{" "}
               <span className="font-medium text-[#7746ff] selection:text-black">
                 and Python
@@ -38,7 +38,9 @@ export default function About() {
               . My goal is to create visually appealing and user-friendly
               websites. I have experience working on a variety of projects and
               I'm always looking to improve my skills. As a team player, I aim
-              to deliver the best results for my clients. Thank you for
+              to deliver the best results for my clients. 
+              <span className="font-medium text-[#a787ff] selection:text-black"> If you didn't notice, I like purple and animated elements. </span>
+              Thank you for
               considering me for your project.
             </motion.p>
 
