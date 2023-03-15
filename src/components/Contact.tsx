@@ -23,6 +23,7 @@ export default function HireMe() {
     if (showAlert) {
       const timer = setTimeout(() => {
         setShowAlert(false);
+        state.succeeded = false;
       }, 4000);
 
       return () => {
@@ -41,6 +42,7 @@ export default function HireMe() {
         <section className="w-full justify-around px-7 max-md:flex-col md:px-20 lg:flex lg:gap-10 lg:px-10  xl:gap-0 xl:px-32">
           <form
             onSubmit={handleSubmit}
+            onSubmitCapture={handleButtonClick}
             className="mx-auto mt-10 flex flex-col  gap-2 sm:max-w-lg  lg:w-96 xl:mx-0"
             method="POST"
           >
@@ -78,7 +80,7 @@ export default function HireMe() {
               {"Message"}
             </label>
             <textarea
-              className="form-textarea rounded-md resize-none bg-[#1A0084] py-1 px-3 transition duration-200 ease-in-out focus:ring-2 focus:ring-indigo-500"
+              className="form-textarea resize-none rounded-md bg-[#1A0084] py-1 px-3 transition duration-200 ease-in-out focus:ring-2 focus:ring-indigo-500"
               id="message"
               name="message"
               rows={5}
@@ -93,7 +95,6 @@ export default function HireMe() {
 
             <button
               type="submit"
-              onClick={handleButtonClick}
               disabled={state.submitting}
               className="mt-4 rounded  bg-button py-3 px-4 font-semibold text-white transition  duration-200 ease-in-out hover:scale-105 hover:bg-indigo-700 "
             >
