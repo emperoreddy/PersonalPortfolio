@@ -1,12 +1,13 @@
 import { useState, useEffect } from "react";
 
-export default function AlertButton({showAlert, setShowAlert}) {
+export default function AlertButton({ showAlert, setShowAlert }) {
 
-  const closed =  showAlert ? 'opacity-100' : 'opacity-0'
- 
+  const closed = showAlert ? "opacity-100" : "opacity-0";
 
   return (
-    <div className={`fixed top-14 ${closed}   m-4 flex w-96 rounded-lg z-20 shadow-lg transition-opacity duration-1000 focus:outline-none`}>
+    <div
+      className={`fixed top-14 ${closed}   z-20 m-4 flex w-96 rounded-lg shadow-lg transition-opacity duration-1000 focus:outline-none`}
+    >
       <div className="flex items-center rounded-l-lg bg-indigo-600 py-4 px-6">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -25,9 +26,9 @@ export default function AlertButton({showAlert, setShowAlert}) {
         <div>Thanks for contacting me!</div>
         <button>
           <svg
-          onClick={() => {
-            
-          }}
+            onClick={() => {
+              setShowAlert(false);
+            }}
             xmlns="http://www.w3.org/2000/svg"
             className="fill-current text-gray-700"
             viewBox="0 0 16 16"
