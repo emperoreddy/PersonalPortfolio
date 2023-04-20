@@ -2,6 +2,7 @@ import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import profile from "../assets/profile.png";
 import "../hamburgers.css";
+import { TbBrandLinkedin, TbBrandGithub } from "react-icons/tb";
 
 export default function Navbar(props) {
   const [isActive, setIsActive] = useState(false);
@@ -33,7 +34,7 @@ export default function Navbar(props) {
         initial={{ opacity: 0, y: -200 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
-        className="sticky top-0 z-50 flex h-14 justify-between  bg-[#200047]/80 py-2 pl-5 backdrop-blur-md md:justify-around md:gap-72  md:px-0 lg:gap-96 "
+        className="sticky top-0 z-50 flex h-14 justify-between bg-[#200047]/80 py-2 pl-5 backdrop-blur-md md:justify-around  md:gap-72  md:px-0 lg:gap-96 "
       >
         <div className="flex items-center gap-3">
           <img
@@ -59,6 +60,8 @@ export default function Navbar(props) {
             <span className="hamburger-inner"></span>
           </span>
         </button>
+
+
         <ul className="hidden items-center gap-10 md:flex">
           <a href="#header">
             <li className="font-medium text-[#6865FF] transition-all duration-100">

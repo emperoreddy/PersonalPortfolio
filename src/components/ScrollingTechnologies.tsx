@@ -12,7 +12,7 @@ export default function ScrollingTechnologies() {
   return (
     <>
       <div className="mx-auto flex h-auto w-full items-center justify-center gap-56 ">
-        <img src={java} className="w-20 h-20 md:h-32 md:w-32 animate-slide " />
+        <img src={java} className="w-20 h-20 md:h-32 md:w-32 animate-slide"/>
         <img src={cpp} className="w-20 h-20 md:h-32 md:w-32 animate-slide " />
         <img src={react} className="w-20 h-20 md:h-32 md:w-32 animate-slide " />
         <img src={javascript} className="w-20 h-20 md:h-32 md:w-32 animate-slide " />
