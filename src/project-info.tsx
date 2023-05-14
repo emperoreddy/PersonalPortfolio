@@ -26,7 +26,7 @@ const Info = [
     color: "purple",
     title: "Personal Portfolio",
     description: "Technologies: React, TailwindCSS, NodeJs",
-    link: "https://amortitubogdan.com",
+    link: "https://github.com/emperoreddy/PersonalPortfolio",
   },
   {
     mockup: banking,
