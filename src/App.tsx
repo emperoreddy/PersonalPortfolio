@@ -115,7 +115,7 @@ function App() {
         </section>
 
         <section className="mt-52 mb-14 md:mb-20" id="contact">
-          <Title title="Hire me" />
+          <Title title="Contact me" />
 
           <motion.div
             initial={{ opacity: 0 }}
