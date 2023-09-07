@@ -47,7 +47,7 @@ function App() {
         />
       </div>
 
-      <Nav first="Home" second="My work" third="Hire me" name="Bogdan A." />
+      <Nav first="Home" second="My work" third="Contact me" name="Bogdan A." />
 
       <div className="pointer-events-none absolute z-0 w-full overflow-x-hidden">
         <img src={fumes} alt="fumes bg" className="h-full w-full" />
