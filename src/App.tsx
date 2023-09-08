@@ -10,7 +10,6 @@ import Footer from "./components/Footer";
 import About from "./components/About";
 import Info from "./project-info";
 import AnimatedCursor from "react-animated-cursor";
-import { Analytics } from "@vercel/analytics/react";
 
 function App() {
   const animations = {
