@@ -2,8 +2,17 @@ import firstDesign from "./assets/projects/firstDesign.webp";
 import gogreen from "./assets/projects/gogreen.webp";
 import portfolio from "./assets/projects/portfolio.webp";
 import banking from "./assets/projects/banking.webp";
+import realtimeChat from "./assets/projects/realtimechat.webp";
 
 const Info = [
+  {
+    mockup: realtimeChat,
+    right: false,
+    color: "blue",
+    title: "Realtime Chat Application",
+    description: "Technologies: React + TypeScript, TailwindCSS, SupaBase",
+    link: "https://github.com/emperoreddy/RealtimeChatApp",
+  },
   {
     mockup: firstDesign,
     right: true,
