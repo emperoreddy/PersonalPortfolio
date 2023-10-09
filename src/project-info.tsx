@@ -10,7 +10,7 @@ const Info = [
     right: false,
     color: "blue",
     title: "Realtime Chat Application",
-    description: "Technologies: React + TypeScript, TailwindCSS, SupaBase",
+    description: "Technologies: React + TypeScript, TailwindCSS, SupaBase, Redux",
     link: "https://github.com/emperoreddy/RealtimeChatApp",
   },
   {
