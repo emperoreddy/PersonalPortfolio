@@ -30,10 +30,10 @@ export default function About() {
               </span>{" "}
               with a focus on{" "}
               <span className="font-medium text-[#7746ff] selection:text-black">
-                HTML / CSS, React, NodeJs
+                React, NodeJs,
               </span>{" "}
               <span className="font-medium text-[#7746ff] selection:text-black">
-                and Python
+                Python and Java
               </span>
               . My goal is to create visually appealing and user-friendly
               websites. I have experience working on a variety of projects and
